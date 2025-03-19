@@ -43,7 +43,6 @@ oscillator for you to synchronize to. Specific caveats here:
 The following shows an example setup script for this board:
 
 ``` python
-
 scope.gain.gain = 45
 scope.adc.samples = 25000
 scope.adc.offset = 0
@@ -158,28 +157,32 @@ We'll modify the provided scripts from the Intel ISSM distribution
 (compiler etc for D2000). Start a Windows command prompt and run the
 following commands. You may have to change the directory of the first
 command to match your version of Intel ISSM (eg.
-C:\\IntelSWTools\\ISSM\_2016.0.027\\issm\_env.bat):
+`C:\\IntelSWTools\\ISSM\_2016.0.027\\issm\_env.bat`):
 
-`C:\IntelSWTools\ISSM_2016.2.097\issm_env.bat`
-`cd %ISSM_DEBUGGER_ROOT%\openocd`
-`bin\openocd.exe -f scripts\interface\ftdi\olimex-arm-usb-ocd-h.cfg -f scripts\board\quark_d2000_ufo.cfg`
+```
+C:\IntelSWTools\ISSM_2016.2.097\issm_env.bat
+cd %ISSM_DEBUGGER_ROOT%\openocd
+bin\openocd.exe -f scripts\interface\ftdi\olimex-arm-usb-ocd-h.cfg -f scripts\board\quark_d2000_ufo.cfg
+```
 
 Note we specify two script files - the first had the JTAG connection
 (the olimex-arm-usb-ocd-h.cfg), the second had the D2000. This should
 result in an output like the following:
 
-`Open On-Chip Debugger 0.8.0-dev-g7845893 (2015-11-26-18:12)`
-`Licensed under GNU GPL v2`
-`For bug reports, read`
-`       `<http://openocd.sourceforge.net/doc/doxygen/bugs.html>
-`Info : only one transport option; autoselect 'jtag'`
-`adapter speed: 125 kHz`
-`trst_only separate trst_push_pull`
-`flash_rom`
-`Info : clock speed 125 kHz`
-`Info : JTAG tap: quark_d2000.cltap tap/device found: 0x0e786013 (mfg: 0x009, part: 0xe786, ver: 0x0)`
-`Enabling lmt core tap`
-`Info : JTAG tap: quark_d2000.lmt enabled`
+```
+Open On-Chip Debugger 0.8.0-dev-g7845893 (2015-11-26-18:12)
+Licensed under GNU GPL v2
+For bug reports, read
+       <http://openocd.sourceforge.net/doc/doxygen/bugs.html>
+Info : only one transport option; autoselect 'jtag'
+adapter speed: 125 kHz
+trst_only separate trst_push_pull
+flash_rom
+Info : clock speed 125 kHz
+Info : JTAG tap: quark_d2000.cltap tap/device found: 0x0e786013 (mfg: 0x009, part: 0xe786, ver: 0x0)
+Enabling lmt core tap
+Info : JTAG tap: quark_d2000.lmt enabled
+```
 
 At this point it will hold, waiting for new commands. There is two ways
 to proceed:
@@ -191,15 +194,19 @@ do any debug. It however is more limited in what commands you can run.
 If this does not work see the next section about using telnet commands.
 Open a second command prompt, and run:
 
-`C:\IntelSWTools\ISSM_2016.0.027\issm_env.bat`
-`gdb`
+```
+C:\IntelSWTools\ISSM_2016.0.027\issm_env.bat
+gdb
+```
 
 You can then run the following within a GDB console:
 
-`target remote :3333`
-`monitor clk32M 125`
-`monitor load_image C:\\chipwhisperer\\\\firmware\\mcu\\intel_quark\\quark_d2000_rom.bin 0x0`
-`monitor load_image C:\\chipwhisperer\\\\firmware\\mcu\\intel_quark\\simpleserial_example\\release\\quark_d2000\\x86\\bin\\simpleserial_aes.bin 0x00180000`
+```
+target remote :3333
+monitor clk32M 125
+monitor load_image C:\\chipwhisperer\\\\firmware\\mcu\\intel_quark\\quark_d2000_rom.bin 0x0
+monitor load_image C:\\chipwhisperer\\\\firmware\\mcu\\intel_quark\\simpleserial_example\\release\\quark_d2000\\x86\\bin\\simpleserial_aes.bin 0x00180000
+```
 
 The first load\_image is used for the ROM image. This should only be
 done once - do not reload every time, only reload the application. The
@@ -242,42 +249,46 @@ Note the port connected to is 4444 (not :3333) as before. This now
 enters the monitor directly, and you can try running the following
 commands:
 
-`reset halt`
-`set QUARK_D2000_OTPC_DATA_WRITE_ENABLED 1`
-`mass_erase`
-`clk32M 100`
-`load_image C:\\chipwhisperer\\firmware\\mcu\\intel_quark\\quark_d2000_rom.bin 0x0`
-`load_image C:\\chipwhisperer\\firmware\\mcu\\intel_quark\\simpleserial_example\\release\\quark_d2000\\x86\\bin\\simpleserial_aes.bin 0x00180000`
+```
+reset halt
+set QUARK_D2000_OTPC_DATA_WRITE_ENABLED 1
+mass_erase
+clk32M 100
+load_image C:\\chipwhisperer\\firmware\\mcu\\intel_quark\\quark_d2000_rom.bin 0x0
+load_image C:\\chipwhisperer\\firmware\\mcu\\intel_quark\\simpleserial_example\\release\\quark_d2000\\x86\\bin\\simpleserial_aes.bin 0x00180000`
+```
 
 The following should be the example output of these commands:
 
-`> reset halt`
-`JTAG tap: quark_d2000.cltap tap/device found: 0x0e786013 (mfg: 0x009, part: 0xe786, ver: 0x0)`
-`Enabling lmt core tap`
-`JTAG tap: quark_d2000.lmt enabled`
-`target state: halted`
-`target halted due to debug-request at 0x0000ffff in real mode`
-`target state: halted`
-`target halted due to debug-request at 0x0000fff0 in real mode`
-`> set QUARK_D2000_OTPC_DATA_WRITE_ENABLED 1`
-`1`
-`> mass_erase`
-`Deleting  OTPC, OTPD and FLASH regions`
-`0xb0100014: 00000001`
-`> clk32M 100`
-`adapter speed: 3 kHz`
-`adapter speed: 100 kHz`
-`JTAG tap: quark_d2000.cltap tap/device found: 0x0e786013 (mfg: 0x009, part: 0xe786, ver: 0x0)`
-`Enabling lmt core tap`
-`JTAG tap: quark_d2000.lmt enabled`
-`target state: halted`
-`target halted due to debug-request at 0x0000fff0 in real mode`
-`> load_image C:\\chipwhisperer\\firmware\\mcu\\intel_quark\\quark_d2000_rom.bin 0x0`
-`....8192 bytes written at address 0x00000000`
-`downloaded 8192 bytes in 66.997505s (0.119 KiB/s)`
-`> load_image C:\\chipwhisperer\\firmware\\mcu\\intel_quark\\simpleserial_example\\release\\quark_d2000\\x8`
-`.2872 bytes written at address 0x00180000`
-`downloaded 2872 bytes in 42.280869s (0.066 KiB/s)`
+```
+> reset halt
+JTAG tap: quark_d2000.cltap tap/device found: 0x0e786013 (mfg: 0x009, part: 0xe786, ver: 0x0)
+Enabling lmt core tap
+JTAG tap: quark_d2000.lmt enabled
+target state: halted
+target halted due to debug-request at 0x0000ffff in real mode
+target state: halted
+target halted due to debug-request at 0x0000fff0 in real mode
+> set QUARK_D2000_OTPC_DATA_WRITE_ENABLED 1
+1
+> mass_erase
+Deleting  OTPC, OTPD and FLASH regions
+0xb0100014: 00000001
+> clk32M 100
+adapter speed: 3 kHz
+adapter speed: 100 kHz
+JTAG tap: quark_d2000.cltap tap/device found: 0x0e786013 (mfg: 0x009, part: 0xe786, ver: 0x0)
+Enabling lmt core tap
+JTAG tap: quark_d2000.lmt enabled
+target state: halted
+target halted due to debug-request at 0x0000fff0 in real mode
+> load_image C:\\chipwhisperer\\firmware\\mcu\\intel_quark\\quark_d2000_rom.bin 0x0
+....8192 bytes written at address 0x00000000
+downloaded 8192 bytes in 66.997505s (0.119 KiB/s)
+> load_image C:\\chipwhisperer\\firmware\\mcu\\intel_quark\\simpleserial_example\\release\\quark_d2000\\x8
+.2872 bytes written at address 0x00180000
+downloaded 2872 bytes in 42.280869s (0.066 KiB/s)
+```
 
 Note you can try the following if still having trouble:
 

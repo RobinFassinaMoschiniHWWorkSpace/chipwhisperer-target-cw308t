@@ -74,35 +74,27 @@ Available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-CE
 
 ### **Multi-purpose AES Cryptographic Engine**
 
-\- Hardware support for ECB, CTR, CBC, and OFB AES modes
-
-\- Support for 128-bit, 192-bit and 256-bit key length
-
-\- DMA interface to SRAM, shared with Hash engine
+- Hardware support for ECB, CTR, CBC, and OFB AES modes
+- Support for 128-bit, 192-bit and 256-bit key length
+- DMA interface to SRAM, shared with Hash engine
 
 ### **Cryptographic Hash Engine**
 
-\- Support for SHA-1, SHA-256, SHA-512
-
-\- DMA interface to SRAM, shared with AES engine
+- Support for SHA-1, SHA-256, SHA-512
+- DMA interface to SRAM, shared with AES engine
 
 ### **Public Key Cryptographic Engine**
 
-\- Hardware support for RSA and Elliptic Curve public key algorithms
-
-\- RSA keys length from 1024 to 4096 bits
-
-\- ECC Prime Field and Binary Field keys up to 640 bits
-
-\- Microcoded support for standard public key algorithms
+- Hardware support for RSA and Elliptic Curve public key algorithms
+- RSA keys length from 1024 to 4096 bits
+- ECC Prime Field and Binary Field keys up to 640 bits
+- Microcoded support for standard public key algorithms
 
 ### **Other Cryptographic Features**
 
-\- True Random Number Generator
-
-\- 1 Kbit FIFO
-
-\- Monotonic Counter
+- True Random Number Generator
+- 1 Kbit FIFO
+- Monotonic Counter
 
 ---
 
@@ -286,11 +278,12 @@ modifying the EFUSE, keep the following in mind:
     decryption and authentication by the bootloader.
 
 You can see an example program that works with the CW308T-CEC1702 device
-at
-[1](https://github.com/newaetech/chipwhisperer-target-cec1702)(https://github.com/newaetech/chipwhisperer-target-cec1702).
-**NOTE: This firmware requires that integers are 32bits. Before building
-this project, go to Project\>Edit Project and change Data Type Size to
-"other (int 4 byte)"**
+at [https://github.com/newaetech/chipwhisperer-target-cec1702](https://github.com/newaetech/chipwhisperer-target-cec1702).
+```{note}
+This firmware requires that integers are 32bits. Before building
+this project, go to Project > Edit Project and change Data Type Size to
+"other (int 4 byte)".
+```
 
 To use E-FUSE with the CW308T, you will need to use a jumper wire. To do
 this:

@@ -1,6 +1,8 @@
 # CW308T-MSP430FR5
 
->This is a BETA target and not yet available. This page will continue to be updated until release. Gerbers are available in the GIT repo if you live dangerously.
+```{note}
+This is a BETA target and not yet available. This page will continue to be updated until release. Gerbers are available in the GIT repo if you live dangerously.
+```
 
 ![](Images/Msp430fr5xxx_target.jpg)
 

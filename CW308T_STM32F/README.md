@@ -248,12 +248,12 @@ cw.program_target(scope, prog, "<path to fw hex file>", baud=38400)
 
 ---
 
-#### Rev -02 Boards
+#### **Rev -02 Boards**
 
 The Rev -02 boards did not have all programming connections present.
 They require some additional steps:
 
-\# Setup the device as usual:
+1. Setup the device as usual:
 
 ``` python
 scope = cw.scope()
@@ -261,13 +261,12 @@ target = cw.target(scope)
 scope.default_setup()
 ```
 
-1.  Mount a jumper between the H1 and PDIC pins (again this is ONLY for
-    the -02 rev).
-      -
-        ![STMF32F-02\_programmer\_jumper.jpg](Images/STMF32F-02_programmer_jumper.jpg
-        "STMF32F-02_programmer_jumper.jpg")
+2.  Mount a jumper between the H1 and PDIC pins (again this is ONLY for
+the -02 rev).
+![STMF32F-02\_programmer\_jumper.jpg](Images/STMF32F-02_programmer_jumper.jpg
+"STMF32F-02_programmer_jumper.jpg")
 
-\# Reset the ARM device either by pressing the reset button (newer UFO
+3. Reset the ARM device either by pressing the reset button (newer UFO
 boards only), or by toggling power:
 
 ``` python
@@ -277,18 +276,19 @@ time.sleep(1)
 scope.io.target_pwr = True
 ```
 
-\# Program the device:
+4. Program the device:
 
 ``` python
 prog = cw.programmers.STM32FProgrammer
 cw.program_target(scope, prog, "<path to fw hex file>")
 ```
 
-1.  The device should program, it may take a moment to fully
-    program/verify on larger devices.
-2.  Remove the jumper between the H1/H2 pins.
+The device should program, it may take a moment to fully
+program/verify on larger devices.
 
-\# Reset the ARM device either by pressing the reset button (newer UFO
+5.  Remove the jumper between the H1 and PDIC pins.
+
+5. Reset the ARM device either by pressing the reset button (newer UFO
 boards only), or by toggling power:
 
 ``` python
