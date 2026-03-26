@@ -36,10 +36,10 @@ The USB bootloader can be used by enabling the 12 MHz clock source.
 
 ## Schematic
 
-See GIT Repo for PDF of schematic.
+The schematic is available [here](https://github.com/newaetech/chipwhisperer-target-cw308t/blob/main/CW312T_RP2350/RP2350_CW312_REV02.PDF).
 
 ---
 
 ## Board Layout
 
-See GIT Repo for gerber files.
+See [GIT Repo](https://github.com/newaetech/chipwhisperer-target-cw308t/tree/main/CW312T_RP2350) for gerber files.
