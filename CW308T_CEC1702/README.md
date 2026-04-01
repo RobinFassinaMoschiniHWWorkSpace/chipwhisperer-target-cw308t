@@ -32,10 +32,8 @@ security functionality.
 | Programming | SPI Flash, JTAG (SRAM only) |
 | Hardware Crypto | Yes |
 | Availability | Standalone |
-| Status | Released |
+| Status | Discontinued |
 | Shunt | 10Ω |
-
-Available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-CEC1702?qs=PzGy0jfpSMvD%2FsklzPsozg%3D%3D)
 
 ## I/O Connections
 

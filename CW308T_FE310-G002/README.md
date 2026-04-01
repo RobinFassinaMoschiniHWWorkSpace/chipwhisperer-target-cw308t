@@ -14,12 +14,8 @@ This board supports the SiFive FE310, which is a RISC-V based microcontroller.
 | Programming | JTAG |
 | Hardware Crypto | No |
 | Availability | Standalone |
-| Status | Released |
+| Status | Discontinued |
 | Shunt | 10Ω |
-
-Available from:
-
- * [Mouser](https://www.mouser.ca/ProductDetail/NewAE/NAE-CW308T-FE310?qs=OlC7AqGiEDlqtLh9gWn7%252BQ%3D%3D)
 
 ---
 

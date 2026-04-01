@@ -17,10 +17,8 @@ really a microcontroller (internal flash etc).
 | Programming | JTAG |
 | Hardware Crypto | No |
 | Availability | Standalone |
-| Status | Released |
+| Status | Discontinued |
 | Shunt | 10Ω |
-
-Available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-D2000?qs=r5DSvlrkXmIpxDv1CU6e4Q%3D%3D) and the [NewAE Store](https://store.newae.com/intel-d2000-x86-microcontroller-target-for-cw308/)
 
 ## Using Board
 

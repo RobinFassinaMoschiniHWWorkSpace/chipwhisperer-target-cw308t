@@ -21,7 +21,6 @@ the multi-core support.
 
 ## Quick Links
 
-* [Buy on Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-MPC5748G?qs=r5DSvlrkXmLaM5xNpZhgpQ%3D%3D)
 * [Download Schematic](https://github.com/newaetech/chipwhisperer-target-cw308t/raw/main/CW308T_MPC57/SCH_CW308T_MPC5748G_02.PDF)
 * [Demo Application](https://github.com/newaetech/chipwhisperer-target-mpc5748g)
 
@@ -35,7 +34,7 @@ the multi-core support.
 | Programming | JTAG |
 | Hardware Crypto | Possible |
 | Availability | Standalone |
-| Status | Released |
+| Status | Discontinued |
 | Shunt | 1Ω |
 
 ---
