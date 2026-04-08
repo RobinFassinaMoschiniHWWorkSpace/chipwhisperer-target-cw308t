@@ -1,9 +1,11 @@
 # CW308T-ADUCM3029
 
+```{note}
+This is a BETA target and not yet available. This page will continue to be updated until release. Gerbers are available in the GIT repo if you live dangerously.
+```
+
 This board supports the Analog Devices ADuCM3029 microcontroller. The
 mounted chip is the ADUCM3029BCPZ.
-
-This is a BETA target and not yet available. This page will continue to be updated until release. Gerbers are available in the GIT repo if you live dangerously.
 
 ![](CW308T_ADuCM3029.PNG)
 

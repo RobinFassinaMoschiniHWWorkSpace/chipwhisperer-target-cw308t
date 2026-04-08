@@ -14,7 +14,7 @@
 | Programming | ISP |
 | Hardware Crypto | No |
 | Availability | Standalone |
-| Status | Released |
+| Status | Discontinued |
 | Shunt | 51Ω |
 
 This target used to come with many of NewAE's starter kits, but has been replaced with the CW308T-STM32F3.

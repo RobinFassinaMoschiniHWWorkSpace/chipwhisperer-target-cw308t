@@ -22,8 +22,10 @@ The Kinetis K82 has both 256KB of FLASH and SRAM, making it an ideal target for 
 | Programming | JTAG |
 | Hardware Crypto | Yes |
 | Availability | Standalone  |
-| Status | Production |
+| Status | Released |
 | Shunt | 10R |
+
+Available from [Mouser](https://www.mouser.ca/ProductDetail/NewAE/NAE-CW308T-K82F?qs=PzGy0jfpSMtZ%2FB7UZTibZA%3D%3D).
 
 ---
 

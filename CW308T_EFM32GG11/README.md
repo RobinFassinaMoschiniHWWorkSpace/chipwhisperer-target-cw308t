@@ -1,10 +1,12 @@
 # CW308T-EFM32GG11
 
+```{note}
+This is a BETA target and not yet available. This page will continue to be updated until release. Gerbers are available in the GIT repo if you live dangerously.
+```
+
 This board supports the Silicon Labs EFM32 Giant Gecko 11
 microcontroller. The chip mounted on the target board is the
 EFM32GG11B1.
-
-This is a BETA target and not yet available. This page will continue to be updated until release. Gerbers are available in the GIT repo if you live dangerously.
 
 ![](Images/CW308T_EFM32GG11.PNG)
 

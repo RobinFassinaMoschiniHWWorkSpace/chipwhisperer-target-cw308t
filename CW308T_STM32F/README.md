@@ -19,16 +19,16 @@ These boards are also available complete with different STM32 devices
 | Availability | Starter kits, Standalone |
 | Status | Released |
 
-* STM32F0: available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-STM32F0?qs=r5DSvlrkXmIzFRGmD1EBXw%3D%3D) and the [NewAE Store](https://store.newae.com/stm32f0-target-for-cw308-arm-cortex-m0-128kb-flash-8kb-sram/)
-* STM32F1: available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-STM32F1?qs=r5DSvlrkXmJcYbIax%2Fpjxw%3D%3D) and the [NewAE Store](https://store.newae.com/stm32f1-target-for-cw308-arm-cortex-m3-128kb-flash-8kb-sram/)
+* STM32F0: available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-STM32F0?qs=r5DSvlrkXmIzFRGmD1EBXw%3D%3D) and the [NewAE Store](https://www.newae.com/product-page/stm32f0-target-for-cw308-arm-cortex-m0-128kb-flash-8kb-sram)
+* STM32F1: available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-STM32F1?qs=r5DSvlrkXmJcYbIax%2Fpjxw%3D%3D) and the [NewAE Store](https://www.newae.com/product-page/stm32f1-target-for-cw308-arm-cortex-m3-128kb-flash-8kb-sram)
 * STM32F2 w/Hardware Crypto: available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-STM32F2HWC?qs=r5DSvlrkXmJrfkJWQlIRng%3D%3D)
-* STM32F3: available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-STM32F3?qs=r5DSvlrkXmKbi9gG3XxX8g%3D%3D) and the [NewAE Store](https://store.newae.com/stm32f3-target-for-cw308-arm-cortex-m4-256kb-flash-40kb-sram/)
-    * Also available in a bundle with the [CANoodler](../../Tools/CANoodler.md) from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-STM32F3AUTO?qs=r5DSvlrkXmJPqn%252BacawA8Q%3D%3D) and the [NewAE Store](https://store.newae.com/stm32f3-target-for-cw308-automotive-bundle-w-canoodler/)
-* STM32F4 (no hardware crypto): available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-STM32F4?qs=r5DSvlrkXmKQ5HF2DzuSkA%3D%3D) and the [NewAE Store](https://store.newae.com/stm32f4-target-for-cw308-arm-cortex-m4-1mb-flash-192kb-sram/)
+* STM32F3: available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-STM32F3?qs=r5DSvlrkXmKbi9gG3XxX8g%3D%3D) and the [NewAE Store](https://www.newae.com/product-page/stm32f3-target-for-cw308-arm-cortex-m4-256kb-flash-40kb-sram)
+    * Also available in a bundle with the [CANoodler](../../Tools/CANoodler.md) from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-STM32F3AUTO?qs=r5DSvlrkXmJPqn%252BacawA8Q%3D%3D) and the [NewAE Store](https://www.newae.com/product-page/stm32f3-target-for-cw308-automotive-bundle-w-canoodler)
+* STM32F4 (no hardware crypto): available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-STM32F4?qs=r5DSvlrkXmKQ5HF2DzuSkA%3D%3D) and the [NewAE Store](https://www.newae.com/product-page/stm32f4-target-for-cw308-arm-cortex-m4-1mb-flash-192kb-sram)
 * STM32F4 w/Hardware Crypto: available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-STM32F4HWC?qs=r5DSvlrkXmLrgVVFt%252BpyiQ%3D%3D)
 * STM32L4 w/Hardware Crypto: available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-STM32L4?qs=OlC7AqGiEDlCVULataTd0w%3D%3D)
 
-* The blank PCB is also available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NPCB-CW308T-STM32F-04?qs=r5DSvlrkXmKb3e62axJWHA%3D%3D) and the [NewAE Store](https://store.newae.com/blank-pcb-stm32fx-cw308-target/)
+* The blank PCB is also available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NPCB-CW308T-STM32F-04?qs=r5DSvlrkXmKb3e62axJWHA%3D%3D) and the [NewAE Store](https://www.newae.com/product-page/blank-pcb-stm32fx-cw308-target)
 
 ---
 

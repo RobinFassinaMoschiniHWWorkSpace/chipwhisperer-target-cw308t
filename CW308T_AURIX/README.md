@@ -21,7 +21,7 @@ This board supports the Infineon TC233LP microcontroller.
 
 Available from:
 
- * [Mouser](https://www.mouser.com/Search/Refine?Keyword=NAE-CW308T-AURIX-TC233)
+ * [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-AURIX-TC233?qs=W%2FMpXkg%252BdQ5Jg5zs1DR5vg%3D%3D)
 
 ---
 

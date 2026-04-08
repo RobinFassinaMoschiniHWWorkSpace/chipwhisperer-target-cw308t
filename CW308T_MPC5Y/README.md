@@ -19,8 +19,8 @@ This target requires an external programmer to reload code.
 
 ## Quick Links
 
-* [Buy MPC5777C on Mouser](https://www.mouser.com/Search/Refine?Keyword=NAE-CW308T-MPC5777C)
-* [Buy MPC5676R on Mouser](https://www.mouser.com/Search/Refine?Keyword=NAE-CW308T-MPC5676R)
+* [Buy MPC5777C on Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-MPC5777C?qs=W%2FMpXkg%252BdQ6QUzubG48CsQ%3D%3D)
+* [Buy MPC5676R on Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-MPC5676R?qs=W%2FMpXkg%252BdQ5dXKPcxfwcBg%3D%3D)
 * [Download Schematic](https://github.com/newaetech/chipwhisperer-target-cw308t/raw/main/CW308T_MPC5Y/NAE-CW308T-MPC5Y.PDF)
 
 ## Specifications 

@@ -1,6 +1,8 @@
 # CW308T-MEGARF
 
+```{note}
 This is a BETA target and not yet available. This page will continue to be updated until release.
+```
 
 This target is for the ATMega2564RFR2. This makes a great target for
 exploring IoT technologies, such as mesh networking protocols.

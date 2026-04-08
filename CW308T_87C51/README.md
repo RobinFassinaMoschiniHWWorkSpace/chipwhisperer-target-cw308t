@@ -30,7 +30,7 @@ be used to perform these two types of attacks.
 | Shunt | 51Ω |
 
 Available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-87C51?qs=r5DSvlrkXmJ64F4k9ZvzhA%3D%3D)
-and the [NewAE Store](https://store.newae.com/87c51-cw308-target-plcc44-package/)
+and the [NewAE Store](https://www.newae.com/product-page/87c51-cw308-target-plcc44-package)
 
 ## Hardware Details
 

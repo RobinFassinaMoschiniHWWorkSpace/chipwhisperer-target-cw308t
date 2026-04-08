@@ -19,7 +19,7 @@ The CW308T-XMEGA fits an Atmel XMEGA device.
 | Shunt | 51Ω |
 
 Available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-XMEGA?qs=P1JMDcb91o4l0XcYi2IADA%3D%3D)
-and the [NewAE Store](https://store.newae.com/xmega-target-for-cw308-8-bit-risc/)
+and the [NewAE Store](https://www.newae.com/product-page/xmega-target-for-cw308-8-bit-risc)
 
 ## I/O Connections
 

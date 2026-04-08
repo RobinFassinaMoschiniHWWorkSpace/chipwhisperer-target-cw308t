@@ -30,8 +30,10 @@ The design files are available as part of the open-source ChipWhisperer example 
 | Programming | JTAG |
 | Hardware Crypto | Yes |
 | Availability | Standalone  |
-| Status | Production |
+| Status | Released |
 | Shunt | 10R |
+
+Available from [Mouser](https://www.mouser.ca/ProductDetail/NewAE/NAE-CW308T-PSOC62?qs=OlC7AqGiEDkmXoiXq6%2F6QA%3D%3D).
 
 ---
 

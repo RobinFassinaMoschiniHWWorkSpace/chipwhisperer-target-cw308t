@@ -19,7 +19,7 @@ These boards do not ship with any microcontroller, but use a 64-pin TQFP socket.
 | Availability | Starter kits, Standalone |
 | Status | Released |
 
-* Available from [NewAE Webstore](http://store.newae.com/stm32f-tqfp64-socket-target-for-cw308/)
+* Available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-STM32F-SOCKET64?qs=rQFj71Wb1eUy9W5%252BOu1DcA%3D%3D) and the [NewAE Webstore](https://www.newae.com/product-page/socket-target-for-cw308).
 
 ---
 

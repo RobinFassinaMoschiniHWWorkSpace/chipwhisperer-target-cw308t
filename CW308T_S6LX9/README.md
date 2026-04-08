@@ -22,8 +22,8 @@ function like any of our other example targets.
 | Status | Released |
 | Shunt | 1Ω |
 
-Available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-S6LX9?qs=r5DSvlrkXmLB6Wv0H65vSg%3D%3DA)
-and the [NewAE Store](https://store.newae.com/spartan-6-lx9-fpga-target-for-cw308/)
+Available from [Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-S6LX9?qs=r5DSvlrkXmLB6Wv0H65vSg%3D%3D)
+and the [NewAE Store](https://www.newae.com/product-page/spartan-6-lx9-fpga-target-for-cw308)
 
 ## Usage
 

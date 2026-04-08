@@ -17,7 +17,7 @@ This target requires an external programmer to reload code.
 
 ## Quick Links
 
-* [Buy on Mouser](https://www.mouser.com/Search/Refine?Keyword=NAE-CW308T-EFR32MG21A)
+* [Buy on Mouser](https://www.mouser.com/ProductDetail/NewAE/NAE-CW308T-EFR32MG21A?qs=W%2FMpXkg%252BdQ4IwJhCSW837w%3D%3D)
 * [Download Schematic](https://github.com/newaetech/chipwhisperer-target-cw308t/raw/main/CW308T_EFR32MG21/NAE-CW308T-EFR32MG21-02_Schematic.PDF)
 
 ## Specifications
