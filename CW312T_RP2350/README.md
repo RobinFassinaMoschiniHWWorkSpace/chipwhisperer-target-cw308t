@@ -28,6 +28,32 @@ LDO on the board.
 
 ---
 
+## Firmware
+
+Available at https://github.com/newaetech/cw_rp2350_fw.git. Make sure to clone the Pico SDK submodule as well.
+
+Building firmware requires the following packages:
+
+```bash
+sudo apt update
+sudo apt install cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential
+```
+
+To build, run the following from the `firmware` folder:
+
+```bash
+export PICO_SDK_PATH="../../pico-sdk"
+mkdir -p build
+cd build
+cmake -DPICO_PLATFORM=rp2350-arm-s ..
+cd simpleserial-aes
+make
+```
+
+Ignore warnings about TinyUSB if you don't require USB support.
+
+---
+
 ## Programming
 
 The USB bootloader can be used by enabling the 12 MHz clock source. To program, do the following:
