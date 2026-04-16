@@ -30,7 +30,48 @@ LDO on the board.
 
 ## Programming
 
-The USB bootloader can be used by enabling the 12 MHz clock source. 
+The USB bootloader can be used by enabling the 12 MHz clock source. To program, do the following:
+
+1. Run `scope.default_setup()`
+1. Set `scope.clock.clkgen_freq = 12E6`
+1. Set PDIC low and `time.sleep(0.5)`
+1. Set NRST low and `time.sleep(0.5)`
+1. Set NRST to high-z (`scope.io.nrst = None`) and `time.sleep(0.5)`
+1. Set PDIC to high-z
+
+Following this, a removable drive should appear, after which your generated UF2 file can be copied over. Your RP2350
+will reboot and run your firmware.
+
+The drive can be found in Python via the following code, requiring the `wmi` package on Windows:
+
+```python
+def get_windows_drive_letter(self):
+    import wmi
+    letter = None
+    c = wmi.WMI()
+    for drive in c.Win32_LogicalDisk():
+        # uncomment to print info of all connected drives
+        #print(str(drive))
+        #print(str(drive.Caption) + str(drive.VolumeName) + str(drive.DriveType))
+        if drive.VolumeName == "RP2350":
+            letter = drive.Caption
+    return letter
+
+def linux_get_rpi_path(self):
+    import subprocess
+    result = subprocess.run(['blkid', '-l', '-o', 'device', '-t', 
+                            'LABEL=RP2350', '-c', '/dev/null'],
+                            capture_output=True)
+    mnt = result.stdout.decode().strip()
+    result = subprocess.run(['findmnt', mnt, '-no', 'TARGET'], capture_output=True)
+    return result.stdout.decode().strip()
+```
+
+### Troubleshooting
+
+#### Drive appears, then disappears before programming
+
+Try increasing the `time.sleep()` delays
 
 ---
 
